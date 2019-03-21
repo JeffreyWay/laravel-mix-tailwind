@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-tailwind",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A quick Laravel Mix extension for Tailwind support.",
   "main": "index.js",
   "scripts": {
