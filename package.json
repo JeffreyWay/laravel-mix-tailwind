@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jeffreyway/laravel-mix-tailwind#readme",
   "peerDependencies": {
-    "laravel-mix": "^2.1.7"
+    "laravel-mix": "^2.1.7",
+    "tailwindcss": "^1.0.0"
   }
 }
