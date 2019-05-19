@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 class Tailwind {
     dependencies() {
@@ -20,7 +20,7 @@ class Tailwind {
             Config.processCssUrls = false;
         }
 
-        let tailwindcss = require('tailwindcss');
+        const tailwindcss = require('tailwindcss');
 
         Config.postCss.push(tailwindcss(this.configPath));
     }
