@@ -13,7 +13,7 @@ npm install laravel-mix-tailwind --save-dev
 Then, require it within your `webpack.mix.js` file, like so:
 
 ```js
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 require('laravel-mix-tailwind');
 
