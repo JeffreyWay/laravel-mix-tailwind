@@ -23,4 +23,4 @@ mix
     .tailwind();
 ```
 
-And you're done! Compile everything down with `npm run dev`. (And [Don't forget to add the Tailwind directives](https://tailwindcss.com/docs/installation#3-use-tailwind-in-your-css) to your Sass/Less/Stylus entry file.)
+And you're done! Compile everything down with `npm run dev`. (And [Don't forget to add the Tailwind directives](https://tailwindcss.com/docs/installation/#2-add-tailwind-to-your-css) to your Sass/Less/Stylus entry file.)
