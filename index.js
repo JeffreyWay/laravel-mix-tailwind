@@ -11,7 +11,7 @@ class Tailwind {
         return ['tailwindcss'];
     }
 
-    register(configPath = './tailwind.js') {
+    register(configPath = './tailwind.config.js') {
         this.configPath = configPath;
     }
 
