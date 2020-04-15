@@ -1,18 +1,29 @@
 let mix = require('laravel-mix');
 
+let fs = require('fs')
+
 class Tailwind {
     dependencies() {
         this.requiresReload = `
             Tailwind has now been installed. Please ensure that
-            your tailwind.js configuration file (node_modules/.bin/tailwind init)
-            has been created, and then run "npm run dev" again.
+            your configuration file (tailwind.js or tailwind.config.js)
+            has been created (node_modules/.bin/tailwind init),
+            and then run "npm run dev" again.
         `;
 
         return ['tailwindcss'];
     }
 
-    register(configPath = './tailwind.js') {
-        this.configPath = configPath;
+    register(oldConfigPath = './tailwind.js') {
+        let newConfigPath = './tailwind.config.js';
+
+        if (fs.existsSync(oldConfigPath)) {
+            this.configPath = oldConfigPath;
+        } else if (fs.existsSync(newConfigPath)) {
+            this.configPath = newConfigPath;
+        } else {
+            throw 'Error: Files tailwind.js or tailwind.config.js don\'t exist.';
+        }
     }
 
     boot() {
