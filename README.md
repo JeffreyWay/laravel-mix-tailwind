@@ -23,4 +23,25 @@ mix
     .tailwind();
 ```
 
-And you're done! Compile everything down with `npm run dev`. (And [Don't forget to add the Tailwind directives](https://tailwindcss.com/docs/installation#3-use-tailwind-in-your-css) to your Sass/Less/Stylus entry file.)
+## Next steps
+
+This package requries tailwind.js, so don't forget to run:
+
+```
+npx tailwindcss init
+mv tailwind.config.js tailwind.js
+npm run dev
+```
+
+app.scss file example:
+
+```
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+```
+
+
+And you're done! Compile everything down with `npm run dev`
+
+[More information about the Tailwind directives](https://tailwindcss.com/docs/installation#3-use-tailwind-in-your-css) to your Sass/Less/Stylus entry file.)
