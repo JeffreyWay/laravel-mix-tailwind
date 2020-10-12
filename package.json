@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-tailwind",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A quick Laravel Mix extension for Tailwind support.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/jeffreyway/laravel-mix-tailwind.git"
   },
-  "keywords": ["laravel", "laravel mix", "mix", "tailwind"],
+  "keywords": [
+    "laravel",
+    "laravel mix",
+    "mix",
+    "tailwind"
+  ],
   "author": "Jeffrey Way",
   "license": "MIT",
   "bugs": {
