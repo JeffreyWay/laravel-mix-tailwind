@@ -28,8 +28,7 @@ mix
 This package requries tailwind.js, so don't forget to run:
 
 ```
-npx tailwindcss init
-mv tailwind.config.js tailwind.js
+npx tailwindcss init tailwind.js
 npm run dev
 ```
 
