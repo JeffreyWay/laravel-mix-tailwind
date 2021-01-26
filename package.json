@@ -21,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/jeffreyway/laravel-mix-tailwind/issues"
   },
-  "homepage": "https://github.com/jeffreyway/laravel-mix-tailwind#readme",
-  "peerDependencies": {
-    "laravel-mix": "^2.1.7"
-  }
+  "homepage": "https://github.com/jeffreyway/laravel-mix-tailwind#readme"
 }
