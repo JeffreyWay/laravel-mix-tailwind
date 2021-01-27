@@ -10,17 +10,15 @@ First, install the extension.
 npm install laravel-mix-tailwind --save-dev
 ```
 
-Then, require it within your `webpack.mix.js` file, like so:
+Then, require it within your `webpack.mix.js` file, and remove the sass() after mix.js, like so:
 
 ```js
-let mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
 
-require('laravel-mix-tailwind');
-
-mix
-    .js('resources/js/app.js', 'public/js')
-    .less('resources/less/app.less', 'public/css')
-    .tailwind();
+mix.sass('resources/sass/app.scss', 'public/css').options({
+    processCssUrls: false,
+    postCss: [ tailwindcss('./tailwind.config.js') ],
+});
 ```
 
 ## Next steps
